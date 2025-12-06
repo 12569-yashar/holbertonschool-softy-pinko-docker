@@ -1,26 +1,26 @@
-# Use the latest version of Ubuntu as a parent image
+# salam
 FROM ubuntu:latest
 
-# Update the package lists for upgrades for packages that need upgrading
+# salam
 RUN apt-get update
 
-# Upgrade all the installed packages
+# salam
 RUN apt-get upgrade -y
 
-# Install Python3 and pip3
+# salam
 RUN apt-get install -y python3 python3-pip
 
-# Install Flask using pip3
+# salam
 RUN pip3 install flask
 
-# Set the working directory to /app
+# salam
 WORKDIR /app
 
-# Copy the current directory contents into the container at /app
+# salam
 COPY . /app
 
-# Make port 5252 available to the world outside this container
+# salam
 EXPOSE 5252
 
-# Run api.py when the container launches
+# salam
 CMD ["python3", "api.py"]

@@ -1,11 +1,11 @@
-# Use the latest version of Ubuntu as a parent image
+# salam
 FROM ubuntu:latest
 
-# Update the package lists for upgrades for packages that need upgrading
+# salam
 RUN apt-get update
 
-# Upgrade all the installed packages
+# salam
 RUN apt-get upgrade -y
 
-# When the Docker container is run, echo "Hello, World!"
+# salam
 CMD echo "Hello, World!"
